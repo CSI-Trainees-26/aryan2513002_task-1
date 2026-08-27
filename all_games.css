@@ -53,6 +53,7 @@ body{
     height: 420px;
     margin-top: 30px;
     margin-bottom: 20px;
+    
 }
 
 .game{
@@ -113,5 +114,5 @@ body{
     box-shadow: 0 10px 35px rgba(66, 64, 80, 0.45);
     transform: translateY(-8px);
     border-color: rgba(255,255,255,.16);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }

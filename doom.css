@@ -120,6 +120,7 @@ iframe {
     border: none;
     background-color: rgb(108, 243, 108);
 }
+
 .btn3{
     font-family: ubuntu;
     color: white;
@@ -157,67 +158,3 @@ iframe {
 }
 
 
-/* Responsive Design */
-
-@media (max-width: 768px) {
-
-    .nav {
-        gap: 25px;
-        margin-top: 20px;
-        padding: 0 15px;
-    }
-
-    .hero {
-        width: 90%;
-        height: auto;
-        margin: 50px auto;
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .hero1,
-    .hero2 {
-        width: 100%;
-        height: auto;
-    }
-
-    .hero1 {
-        gap: 25px;
-    }
-
-    .hero1 h1 {
-        font-size: clamp(30px, 8vw, 40px);
-        text-align: center;
-    }
-
-    .desc {
-        font-size: 15px;
-        gap: 15px;
-        text-align: center;
-    }
-
-    iframe {
-        width: 100%;
-        max-width: 560px;
-        aspect-ratio: 16 / 9;
-    }
-
-    .btn2,
-    .btn3 {
-        width: min(250px, 80vw);
-    }
-
-    .desc2 {
-        width: 90%;
-        margin: auto;
-    }
-
-    .desc2 h1 {
-        font-size: 28px;
-    }
-
-    .line {
-        font-size: 14px;
-        padding: 0 15px;
-    }
-}
