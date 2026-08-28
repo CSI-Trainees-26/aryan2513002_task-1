@@ -17,11 +17,15 @@
 
 body{
     background: rgb(11, 11, 14);
+    overflow-x: hidden;
 }
+
 .logo{
     display: flex;
 }
+
 .navbar {
+    animation: heroFade 1s ease 0.3s both;
     font-family: sans-serif;
     margin: 0 30px;
     padding-top: 20px;
@@ -49,13 +53,57 @@ body{
 }
 
 .page-1 {
+    overflow: hidden;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background-image: url("bg4.png");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.page-1 {
+    animation: bgFade 1.5s ease both;
+    width: 100%;
+    min-height: 100vh;
     background-image: url("bg4.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
 
+@keyframes bgFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hero h1 {
+    animation: heroFade 1s ease 0.3s both;
+}
+
+.hero p {
+    animation: heroFade 1s ease 0.3s both;
+}
+
+.hero button {
+    animation: heroFade 1s ease 0.3s both;
+}
+
+@keyframes heroFade {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+        filter: blur(8px);
+    }
     
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
 
 .hero {
@@ -140,6 +188,7 @@ a{
 }
 
 .tagline{
+    animation: heroFade 1s ease 0.3s both;
     background-color: rgba(255, 255, 255, 0.075);
     border: 1px solid rgb(98, 219, 98);
     width: 200px;
@@ -169,6 +218,33 @@ a{
     align-items: center;
 }
 
+.page2-heading {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 90%;
+}
+
+.container{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+        filter: blur(2px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
 .page2-heading{
     text-align: center;
     color: white;
@@ -196,16 +272,26 @@ a{
     flex-direction: column;
     justify-content: center;
     width: 41.5%;
-    height: 500px;    
+    height: 500px;
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
+
 .cont-1 h1{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     font-weight: 500;
     color: white;
     font-family: Orbitron;
 }
 
 .cont-1 p{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
     color: rgb(194, 193, 193);
     font-size: 17px;
     margin-top: 30px;
@@ -215,6 +301,9 @@ a{
 
 
 .btn-cont1{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
     padding: 10px;
     width:120px;
     border-radius: 20px;
@@ -228,6 +317,9 @@ a{
 
 
 .cont-2 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     border-radius: 20px;
     width: 35%;
     height: 500px;
@@ -240,6 +332,9 @@ a{
 
 
 .page3{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -252,6 +347,9 @@ a{
 }
 
 .trailer{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     font-family: orbitron;
     font-weight: 100;
     margin-top: 80px;
@@ -268,6 +366,9 @@ a{
 }
 
 .t1-2{
+    /* animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,6 +385,7 @@ a{
 }
 
 .t1-3{
+    
     width: 40%;
     height: 1400px;
     display: flex;
@@ -293,6 +395,9 @@ a{
 }
 
 .t1-3-1{
+    /* animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -306,6 +411,9 @@ a{
     transition: 0.3s;
 }
 .t1-3-2{
+    /* animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,6 +429,9 @@ a{
 }
 
 .page3-btn{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     height: 60px;
     width: 60px;
     padding: 20px;
@@ -358,7 +469,9 @@ a{
 
 
 .subsc{
-    
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -367,6 +480,9 @@ a{
 }
 
 .subsc h1{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     color: white;
     font-family: Montserrat;
     text-align: center;
@@ -383,6 +499,9 @@ a{
 }
 
 .game{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,6 +514,9 @@ a{
 }
 
 .game h1{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     color: white;
     font-weight: 500;
     margin-top: 30px;
@@ -402,11 +524,17 @@ a{
 }
 
 .game li{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     color: rgb(161, 161, 161);
     font-family: roboto;
 }
 
 .game button{
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     padding: 10px;
     width: 200px;
     margin-bottom: 30px;
@@ -418,6 +546,9 @@ a{
 
 
 .footer {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     margin-top: 100px;
     background: rgb(11, 11, 14);
     color: white;
@@ -426,6 +557,9 @@ a{
 }
 
 .footer-top {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
     display: flex;
     justify-content: space-between;
     gap: 50px;
