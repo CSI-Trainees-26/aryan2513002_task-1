@@ -322,3 +322,89 @@ iframe {
     background-color: rgb(108, 243, 108);
     font-weight: 600;
 }
+
+.footer {
+    margin-top: 100px;
+    background: rgb(11, 11, 14);
+    color: white;
+    padding: 60px 7% 20px;
+    border-top: 1px solid #222;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-brand {
+    width: 35%;
+}
+
+.footer-brand h2 {
+    font-family: Montserrat;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.footer-brand span {
+    color: rgb(108, 243, 108);
+}
+
+.footer-brand p {
+
+    font-family: roboto;
+    color: #888;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer h3 {
+    font-family: Montserrat;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.footer a {
+    font-family: roboto;
+    color: #888;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social p{
+    font-family: roboto;
+}
+.socials a {
+    font-family: roboto;
+    border: 1px solid #333;
+    padding: 8px 12px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 13px;
+    font-family: roboto;
+}
