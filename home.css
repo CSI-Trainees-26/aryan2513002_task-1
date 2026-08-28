@@ -166,6 +166,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
 }
 
 .page2-heading{
@@ -173,9 +174,11 @@ a{
     color: rgba(5, 5, 5, 0.925);
     font-weight: bold;
     font-family: Montserrat;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 50px;
-
+    border-bottom: 1px solid black;
+    width: 85%;
+    padding: 40px;
 }
 
 .container {
@@ -193,9 +196,7 @@ a{
     flex-direction: column;
     justify-content: center;
     width: 41.5%;
-    height: 500px;
-    /* background-color: red; */
-    
+    height: 500px;    
 }
 
 .cont-1 h1{
@@ -279,11 +280,11 @@ a{
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.192);
     margin-top: 250px;    
+    transition: 0.3s;
 }
 
 .t1-3{
     width: 40%;
-    /* background-color: blue; */
     height: 1400px;
     display: flex;
     flex-direction: column;
@@ -302,6 +303,7 @@ a{
     background-size: cover;    
     border-radius: 30px;
     background-repeat: no-repeat;
+    transition: 0.3s;
 }
 .t1-3-2{
     display: flex;
@@ -315,6 +317,7 @@ a{
     border-radius: 30px;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 0.3s;
 }
 
 .page3-btn{
@@ -325,5 +328,30 @@ a{
     border: 1px solid white;
     color: white;
     background-color: transparent;
+    transition: 0.2s;
 }
 
+.t1-2:hover {
+    box-shadow: 0 10px 35px rgba(66, 64, 80, 0.45);
+    transform: translateY(-8px);
+    border-color: rgba(255,255,255,.16);
+    transform: scale(1.05);
+}
+
+.t1-3-1:hover {
+    box-shadow: 0 10px 35px rgba(66, 64, 80, 0.45);
+    transform: translateY(-8px);
+    border-color: rgba(255,255,255,.16);
+    transform: scale(1.05);
+}
+
+.t1-3-2:hover {
+    box-shadow: 0 10px 35px rgba(66, 64, 80, 0.45);
+    transform: translateY(-8px);
+    border-color: rgba(255,255,255,.16);
+    transform: scale(1.05);
+}
+
+.page3-btn:hover{
+    background-color: rgba(255, 255, 255, 0.212);
+}
