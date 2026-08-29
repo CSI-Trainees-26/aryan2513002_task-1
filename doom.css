@@ -6,6 +6,35 @@
   padding: 0;
   margin: 0;
 }
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+        filter: blur(2px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes heroFade{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+        filter: blur(8px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blue(0);
+    }
+}
+
 body {
   background: rgb(11, 11, 14);
 }
@@ -14,6 +43,7 @@ a {
   color: rgb(167, 165, 165);
 }
 .nav {
+    animation: heroFade 1s ease 0.3s both;
   margin-top: 25px;
   display: flex;
   align-items: center;
@@ -45,7 +75,9 @@ a {
   color: rgb(223, 223, 223);
 }
 
+
 .hero {
+    animation: heroFade 1s ease 0.3s both;
   width: 80%;
   height: 500px;
   /* background-color: yellow; */
@@ -161,6 +193,9 @@ iframe {
 }
 
 .page2 h1 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   color: white;
   font-family: Montserrat;
   font-size: 25px;
@@ -175,6 +210,9 @@ iframe {
   align-items: center;
 }
 .box {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   display: flex;
   border-radius: 20px;
   width: 80%;
@@ -183,6 +221,9 @@ iframe {
 }
 
 .b1 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   font-family: ubuntu;
   width: 50%;
   height: 530px;
@@ -203,6 +244,9 @@ iframe {
 }
 
 .b2 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   font-family: ubuntu;
   width: 50%;
   height: 600px;
@@ -215,6 +259,9 @@ iframe {
 }
 
 .b2 h2 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   margin-bottom: 30px;
   color: white;
   text-align: center;
@@ -222,6 +269,9 @@ iframe {
 }
 
 .req-container {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -233,12 +283,18 @@ iframe {
   align-items: flex-start;
 }
 .req h3 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   font-size: 17px;
   color: rgb(185, 185, 185);
   font-weight: 500;
 }
 
 .req h5 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   margin-top: 8px;
   font-size: 15px;
   font-weight: 300;
@@ -246,6 +302,9 @@ iframe {
 }
 
 .page3 h2 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   color: white;
   text-align: center;
   margin-top: 100px;
@@ -253,12 +312,18 @@ iframe {
 }
 
 .page3 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .page3-1 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   width: 50%;
   height: 295px;
   background-color: rgba(255, 255, 255, 0.096);
@@ -269,6 +334,9 @@ iframe {
 }
 
 .page3-1-1 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   width: 50%;
   height: 300px;
   /* background-color: red; */
@@ -277,6 +345,9 @@ iframe {
 }
 
 .image {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   margin-top: 30px;
   background-image: url(add-on.jpg);
   height: 150px;
@@ -288,12 +359,18 @@ iframe {
 }
 
 .page3-1-2 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   width: 40%;
   display: flex;
   flex-direction: column;
 }
 
 .page3-1-2 h5 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   margin-top: 30px;
   font-family: Roboto;
   color: rgb(146, 145, 145);
@@ -302,11 +379,17 @@ iframe {
 }
 
 .page3-1-2 h3 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   color: white;
   font-family: Montserrat;
 }
 
 .page3-1-2 h4 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   font-family: Roboto;
   color: rgb(146, 145, 145);
   font-weight: 400;
@@ -315,6 +398,9 @@ iframe {
 }
 
 .add {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   padding: 10px;
   margin-top: 10px;
   border-radius: 10px;
@@ -324,6 +410,9 @@ iframe {
 }
 
 .footer {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   margin-top: 100px;
   background: rgb(11, 11, 14);
   color: white;
@@ -332,6 +421,9 @@ iframe {
 }
 
 .footer-top {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -343,6 +435,9 @@ iframe {
 }
 
 .footer-brand h2 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   font-family: Montserrat;
   font-size: 32px;
   letter-spacing: 2px;
@@ -353,6 +448,9 @@ iframe {
 }
 
 .footer-brand p {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   font-family: roboto;
   color: #888;
   line-height: 1.6;
@@ -361,12 +459,18 @@ iframe {
 
 .footer-links,
 .footer-social {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
 .footer h3 {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
   font-family: Montserrat;
   margin-bottom: 10px;
   font-size: 16px;
@@ -399,6 +503,9 @@ iframe {
 }
 
 .footer-bottom {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 5%;
   border-top: 1px solid #222;
   padding-top: 20px;
   display: flex;
