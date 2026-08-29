@@ -17,12 +17,17 @@
     }
 }
 
-.back-btn{
+.back-btn {
     animation: Fade 1s ease 0.3s both;
+
     position: absolute;
     top: 20px;
     left: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 10;
+
+    display: inline-block;
+
+    font-family: 'Lucida Sans', sans-serif;
     background-color: rgba(94, 93, 93, 0.25);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.226);
@@ -30,10 +35,12 @@
     border-radius: 30px;
     font-size: 13px;
     cursor: pointer;
-    transition: 0.3s;
+    text-decoration: none;
+
+    transition: 0.3s ease;
 }
 
-.back-btn:hover{
+.back-btn:hover {
     background-color: rgb(20, 20, 20);
     border-color: rgb(20, 20, 20);
 }
