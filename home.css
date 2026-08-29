@@ -14,6 +14,44 @@
     box-sizing: border-box;
 }
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+        filter: blur(2px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes bgFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes heroFade {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+        filter: blur(8px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
 
 body{
     background: rgb(11, 11, 14);
@@ -70,15 +108,7 @@ body{
     background-size: cover;
 }
 
-@keyframes bgFade {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        opacity: 1;
-    }
-}
 
 .hero h1 {
     animation: heroFade 1s ease 0.3s both;
@@ -92,19 +122,7 @@ body{
     animation: heroFade 1s ease 0.3s both;
 }
 
-@keyframes heroFade {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-        filter: blur(8px);
-    }
-    
-    to {
-        opacity: 1;
-        transform: translateY(0);
-        filter: blur(0);
-    }
-}
+
 
 .hero {
     display: flex;
@@ -229,20 +247,6 @@ a{
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
 
-}
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-        filter: blur(2px);
-    }
-    
-    to {
-        opacity: 1;
-        transform: translateY(0);
-        filter: blur(0);
-    }
 }
 
 .page2-heading{
